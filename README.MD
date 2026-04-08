@@ -1,147 +1,117 @@
-# 🧠 Gen AI Task 3: Functions, Lambda, Map & Filter
+# 📘 Python Tasks Repository
 
-## 📌 Overview
+This repository contains three fundamental Python tasks designed to build a strong foundation in programming concepts including basics, control flow, and functions.
 
-This notebook contains solutions for **Task 3** of the Gen AI course, focusing on Python fundamentals such as:
+---
 
-* User-defined functions
-* Default arguments
-* Recursion
+## 📂 Project Structure
+
+```
+├── TASK1_PYTHON_BASICS.ipynb
+├── TASK2_CONTROLFLOW.ipynb
+├── TASK3_FUNCTION.ipynb
+└── README.md
+```
+
+---
+
+## 🧩 Task 1: Python Basics
+
+### 📌 Description
+
+This notebook covers the fundamental concepts of Python programming.
+
+### 🔑 Topics Covered
+
+* Variables and Data Types
+* Type Casting
+* Basic Input/Output
+* Arithmetic Operations
+* Lists, Tuples, and Dictionaries
+
+### 🎯 Objective
+
+To understand the core building blocks of Python and how to use them effectively.
+
+---
+
+## 🔁 Task 2: Control Flow
+
+### 📌 Description
+
+This notebook focuses on decision-making and looping constructs in Python.
+
+### 🔑 Topics Covered
+
+* `if`, `elif`, `else` statements
+* Nested conditions
+* `for` and `while` loops
+* `break` and `continue`
+* Practical problem-solving using control flow
+
+### 🎯 Objective
+
+To learn how to control the flow of a program based on conditions and iterations.
+
+---
+
+## ⚙️ Task 3: Functions
+
+### 📌 Description
+
+This notebook introduces functions and modular programming.
+
+### 🔑 Topics Covered
+
+* Function definition and calling
+* Parameters and return values
 * Lambda functions
-* Map and Filter
-* Practical mini problem implementation
+* Built-in functions (`map`, `filter`)
+* Writing reusable code
+
+### 🎯 Objective
+
+To understand how to write clean, reusable, and efficient code using functions.
 
 ---
 
-## 🎯 Tasks Implemented
+## 🚀 How to Run
 
-### ✅ Task 1: Discount Calculation Function
+1. Install Python (>= 3.x)
+2. Install Jupyter Notebook:
 
-* Created a function `apply_discount()`
-* Used **default argument (5%)**
-* Calculates final price after discount
+   ```
+   pip install notebook
+   ```
+3. Run the notebook:
 
-```python
-def apply_discount(price, discount_percent=5):
-    final_price = price - ((discount_percent/100) * price)
-    return final_price
-```
-
----
-
-### ✅ Task 2: Factorial Using Recursion
-
-* Implemented recursive function `factorial()`
-* Handled negative input
-* Used base condition (`0` and `1`)
-
-```python
-def factorial(n):
-    if n < 0:
-        print("its a -ve number")
-        return
-    elif n == 0 or n == 1:
-        return 1
-    return n * factorial(n-1)
-```
+   ```
+   jupyter notebook
+   ```
+4. Open any `.ipynb` file and execute the cells.
 
 ---
 
-### ✅ Task 3: Lambda Function
+## 🛠️ Requirements
 
-* Used lambda to calculate GST
-* Demonstrates **anonymous function usage**
-
-```python
-gst = lambda price: price + (0.8 * price)
-```
+* Python 3.x
+* Jupyter Notebook / VS Code
 
 ---
 
-### ✅ Task 4: Map Function
-
-* Applied `map()` with lambda
-* Transformed list of prices by adding GST
-
-```python
-list(map(lambda p: p + (0.8 * p), prices))
-```
-
----
-
-### ✅ Task 5: Filter Function
-
-* Used `filter()` to select values
-* Extracted prices based on condition
-
-```python
-list(filter(lambda p: p > 500, prices))
-```
-
----
-
-### ✅ Task 6: Map + Filter Combined
-
-* Combined both functions
-* Applied transformation + filtering
-
-```python
-discounted_prices = list(map(lambda p: p + (p * 0.10), prices))
-filtered = list(filter(lambda p: p > 300, discounted_prices))
-```
-
----
-
-## 🧪 Mini Project: Price Management System
-
-### 📊 Features:
-
-* Add price to list
-* Calculate average price
-* Find maximum price
-* Handle empty list
-
-### 💡 Functions Used:
-
-* `add_price()` → adds price
-* `avg_price()` → calculates average
-* `max_price()` → finds max value
-
----
-
-## 🧠 Key Learnings
-
-* How to write reusable functions
-* Importance of base condition in recursion
-* Difference between `def` and `lambda`
-* Practical use of `map()` and `filter()`
-* Handling edge cases like empty lists
-
----
-
-## ▶️ How to Run
-
-1. Open the notebook
-2. Run all cells sequentially
-3. Test functions with different inputs
-
----
-
-## 🚀 Future Improvements
-
-* Add input validation
-* Improve UI with menu system
-* Store data in file
-* Convert to web app
-
----
-
-## 👨‍💻 Author
+## ✨ Author
 
 **Ruthvik Sukhavasi**
+Aspiring Data Scientist
 
 ---
 
-## ⭐ Note
+## 📌 Notes
 
-This task is part of my **Gen AI learning journey**, focusing on building strong Python fundamentals required for data science and real-world problem solving.
+* These tasks are beginner-friendly and ideal for practice.
+* Focus on understanding concepts rather than memorizing code.
+* Try modifying the code to explore more scenarios.
+
+---
+
+⭐ If you find this helpful, consider revisiting and improving your solutions!
