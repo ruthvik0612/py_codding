@@ -1,6 +1,6 @@
-# 📘 Python Tasks Repository
+# 📘 Python & Data Science Tasks Repository
 
-This repository contains three fundamental Python tasks designed to build a strong foundation in programming concepts including basics, control flow, and functions.
+This repository contains foundational Python tasks along with NumPy-based data analysis, designed to build strong programming and data analysis skills.
 
 ---
 
@@ -10,6 +10,7 @@ This repository contains three fundamental Python tasks designed to build a stro
 ├── TASK1_PYTHON_BASICS.ipynb
 ├── TASK2_CONTROLFLOW.ipynb
 ├── TASK3_FUNCTION.ipynb
+├── TASK9_NUMPY_ANALYSIS.ipynb
 └── README.md
 ```
 
@@ -19,19 +20,19 @@ This repository contains three fundamental Python tasks designed to build a stro
 
 ### 📌 Description
 
-This notebook covers the fundamental concepts of Python programming.
+Covers the fundamental concepts of Python programming.
 
 ### 🔑 Topics Covered
 
 * Variables and Data Types
 * Type Casting
-* Basic Input/Output
+* Input/Output
 * Arithmetic Operations
-* Lists, Tuples, and Dictionaries
+* Lists, Tuples, Dictionaries
 
 ### 🎯 Objective
 
-To understand the core building blocks of Python and how to use them effectively.
+Build a strong foundation in Python basics.
 
 ---
 
@@ -39,19 +40,18 @@ To understand the core building blocks of Python and how to use them effectively
 
 ### 📌 Description
 
-This notebook focuses on decision-making and looping constructs in Python.
+Focuses on decision-making and looping constructs.
 
 ### 🔑 Topics Covered
 
-* `if`, `elif`, `else` statements
+* `if`, `elif`, `else`
 * Nested conditions
-* `for` and `while` loops
-* `break` and `continue`
-* Practical problem-solving using control flow
+* `for`, `while` loops
+* `break`, `continue`
 
 ### 🎯 Objective
 
-To learn how to control the flow of a program based on conditions and iterations.
+Understand how to control program execution logically.
 
 ---
 
@@ -59,19 +59,50 @@ To learn how to control the flow of a program based on conditions and iterations
 
 ### 📌 Description
 
-This notebook introduces functions and modular programming.
+Introduces reusable and modular coding.
 
 ### 🔑 Topics Covered
 
-* Function definition and calling
+* Function definition
 * Parameters and return values
 * Lambda functions
-* Built-in functions (`map`, `filter`)
-* Writing reusable code
+* `map()` and `filter()`
 
 ### 🎯 Objective
 
-To understand how to write clean, reusable, and efficient code using functions.
+Write efficient and reusable code.
+
+---
+
+## 📊 Task 9: NumPy Sales Data Analysis
+
+### 📌 Description
+
+This task focuses on performing numerical and statistical analysis on sales data using NumPy arrays.
+
+### 🔑 Topics Covered
+
+* Array creation and manipulation
+* Mathematical operations on arrays
+* Statistical analysis
+
+### 📈 Operations Performed
+
+* ✅ Total sales calculation
+* ✅ Minimum and maximum sales
+* ✅ Mean (average sales)
+* ✅ Standard deviation
+* ✅ Row-wise and column-wise operations
+
+  * Row minimum & maximum
+  * Column minimum & maximum
+* ✅ Sales above average (filtering using boolean indexing)
+* ✅ Sorting sales data
+* ✅ Percentile calculation
+
+### 🎯 Objective
+
+To understand how NumPy is used for efficient numerical computation and data analysis in real-world scenarios.
 
 ---
 
@@ -80,21 +111,24 @@ To understand how to write clean, reusable, and efficient code using functions.
 1. Install Python (>= 3.x)
 2. Install Jupyter Notebook:
 
-   ```
-   pip install notebook
-   ```
-3. Run the notebook:
+```
+pip install notebook
+```
 
-   ```
-   jupyter notebook
-   ```
-4. Open any `.ipynb` file and execute the cells.
+3. Run:
+
+```
+jupyter notebook
+```
+
+4. Open `.ipynb` files and execute cells.
 
 ---
 
 ## 🛠️ Requirements
 
 * Python 3.x
+* NumPy
 * Jupyter Notebook / VS Code
 
 ---
@@ -108,10 +142,19 @@ Aspiring Data Scientist
 
 ## 📌 Notes
 
-* These tasks are beginner-friendly and ideal for practice.
-* Focus on understanding concepts rather than memorizing code.
-* Try modifying the code to explore more scenarios.
+* Beginner-friendly tasks with progressive difficulty
+* Focus on logic building and problem-solving
+* Includes real-world data analysis using NumPy
+* Recommended to practice and modify code
 
 ---
 
-⭐ If you find this helpful, consider revisiting and improving your solutions!
+## ⭐ Future Improvements
+
+* Add Pandas-based analysis
+* Add visualization (Matplotlib, Seaborn)
+* Build end-to-end ML project
+
+---
+
+⭐ If you find this helpful, keep improving and building projects!
