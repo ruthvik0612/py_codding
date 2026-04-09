@@ -1,147 +1,160 @@
-# 🧠 Gen AI Task 3: Functions, Lambda, Map & Filter
+# 📘 Python & Data Science Tasks Repository
 
-## 📌 Overview
+This repository contains foundational Python tasks along with NumPy-based data analysis, designed to build strong programming and data analysis skills.
 
-This notebook contains solutions for **Task 3** of the Gen AI course, focusing on Python fundamentals such as:
+---
 
-* User-defined functions
-* Default arguments
-* Recursion
+## 📂 Project Structure
+
+```
+├── TASK1_PYTHON_BASICS.ipynb
+├── TASK2_CONTROLFLOW.ipynb
+├── TASK3_FUNCTION.ipynb
+├── TASK9_NUMPY_ANALYSIS.ipynb
+└── README.md
+```
+
+---
+
+## 🧩 Task 1: Python Basics
+
+### 📌 Description
+
+Covers the fundamental concepts of Python programming.
+
+### 🔑 Topics Covered
+
+* Variables and Data Types
+* Type Casting
+* Input/Output
+* Arithmetic Operations
+* Lists, Tuples, Dictionaries
+
+### 🎯 Objective
+
+Build a strong foundation in Python basics.
+
+---
+
+## 🔁 Task 2: Control Flow
+
+### 📌 Description
+
+Focuses on decision-making and looping constructs.
+
+### 🔑 Topics Covered
+
+* `if`, `elif`, `else`
+* Nested conditions
+* `for`, `while` loops
+* `break`, `continue`
+
+### 🎯 Objective
+
+Understand how to control program execution logically.
+
+---
+
+## ⚙️ Task 3: Functions
+
+### 📌 Description
+
+Introduces reusable and modular coding.
+
+### 🔑 Topics Covered
+
+* Function definition
+* Parameters and return values
 * Lambda functions
-* Map and Filter
-* Practical mini problem implementation
+* `map()` and `filter()`
+
+### 🎯 Objective
+
+Write efficient and reusable code.
 
 ---
 
-## 🎯 Tasks Implemented
+## 📊 Task 9: NumPy Sales Data Analysis
 
-### ✅ Task 1: Discount Calculation Function
+### 📌 Description
 
-* Created a function `apply_discount()`
-* Used **default argument (5%)**
-* Calculates final price after discount
+This task focuses on performing numerical and statistical analysis on sales data using NumPy arrays.
 
-```python
-def apply_discount(price, discount_percent=5):
-    final_price = price - ((discount_percent/100) * price)
-    return final_price
+### 🔑 Topics Covered
+
+* Array creation and manipulation
+* Mathematical operations on arrays
+* Statistical analysis
+
+### 📈 Operations Performed
+
+* ✅ Total sales calculation
+* ✅ Minimum and maximum sales
+* ✅ Mean (average sales)
+* ✅ Standard deviation
+* ✅ Row-wise and column-wise operations
+
+  * Row minimum & maximum
+  * Column minimum & maximum
+* ✅ Sales above average (filtering using boolean indexing)
+* ✅ Sorting sales data
+* ✅ Percentile calculation
+
+### 🎯 Objective
+
+To understand how NumPy is used for efficient numerical computation and data analysis in real-world scenarios.
+
+---
+
+## 🚀 How to Run
+
+1. Install Python (>= 3.x)
+2. Install Jupyter Notebook:
+
+```
+pip install notebook
 ```
 
----
+3. Run:
 
-### ✅ Task 2: Factorial Using Recursion
-
-* Implemented recursive function `factorial()`
-* Handled negative input
-* Used base condition (`0` and `1`)
-
-```python
-def factorial(n):
-    if n < 0:
-        print("its a -ve number")
-        return
-    elif n == 0 or n == 1:
-        return 1
-    return n * factorial(n-1)
+```
+jupyter notebook
 ```
 
----
-
-### ✅ Task 3: Lambda Function
-
-* Used lambda to calculate GST
-* Demonstrates **anonymous function usage**
-
-```python
-gst = lambda price: price + (0.8 * price)
-```
+4. Open `.ipynb` files and execute cells.
 
 ---
 
-### ✅ Task 4: Map Function
+## 🛠️ Requirements
 
-* Applied `map()` with lambda
-* Transformed list of prices by adding GST
-
-```python
-list(map(lambda p: p + (0.8 * p), prices))
-```
+* Python 3.x
+* NumPy
+* Jupyter Notebook / VS Code
 
 ---
 
-### ✅ Task 5: Filter Function
-
-* Used `filter()` to select values
-* Extracted prices based on condition
-
-```python
-list(filter(lambda p: p > 500, prices))
-```
-
----
-
-### ✅ Task 6: Map + Filter Combined
-
-* Combined both functions
-* Applied transformation + filtering
-
-```python
-discounted_prices = list(map(lambda p: p + (p * 0.10), prices))
-filtered = list(filter(lambda p: p > 300, discounted_prices))
-```
-
----
-
-## 🧪 Mini Project: Price Management System
-
-### 📊 Features:
-
-* Add price to list
-* Calculate average price
-* Find maximum price
-* Handle empty list
-
-### 💡 Functions Used:
-
-* `add_price()` → adds price
-* `avg_price()` → calculates average
-* `max_price()` → finds max value
-
----
-
-## 🧠 Key Learnings
-
-* How to write reusable functions
-* Importance of base condition in recursion
-* Difference between `def` and `lambda`
-* Practical use of `map()` and `filter()`
-* Handling edge cases like empty lists
-
----
-
-## ▶️ How to Run
-
-1. Open the notebook
-2. Run all cells sequentially
-3. Test functions with different inputs
-
----
-
-## 🚀 Future Improvements
-
-* Add input validation
-* Improve UI with menu system
-* Store data in file
-* Convert to web app
-
----
-
-## 👨‍💻 Author
+## ✨ Author
 
 **Ruthvik Sukhavasi**
+Aspiring Data Scientist
 
 ---
 
-## ⭐ Note
+## 📌 Notes
 
-This task is part of my **Gen AI learning journey**, focusing on building strong Python fundamentals required for data science and real-world problem solving.
+* Beginner-friendly tasks with progressive difficulty
+* Focus on logic building and problem-solving
+* Includes real-world data analysis using NumPy
+* Recommended to practice and modify code
+
+---
+
+## ⭐ Future Improvements
+
+* Add Pandas-based analysis
+* Add visualization (Matplotlib, Seaborn)
+* Build end-to-end ML project
+
+---
+
+⭐ If you find this helpful, keep improving and building projects!
